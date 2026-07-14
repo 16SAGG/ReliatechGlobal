@@ -508,6 +508,26 @@ header {
     line-height: 1.6;
 }
 
+/* --- Full-width and half-width card containers --- */
+.cards-full-width {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.cards-half-width {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .cards-half-width {
+        grid-template-columns: 1fr;
+    }
+}
+
 .bg-light {
     background-color: var(--bg-section-light);
 }
