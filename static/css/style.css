@@ -702,6 +702,7 @@ header {
 
 /* Glassmorphism en Formulario (Refuerzo) */
 .contact-form-container {
+    display: flex;
     flex: 1;
     background: var(--white);
     /* Cambiado a variable */
@@ -712,15 +713,20 @@ header {
 }
 
 .modern-form {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
+.form-group{
+    display: flex;
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
+    flex-grow:1;
     padding: 1rem 1.2rem;
     border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 12px;
