@@ -136,19 +136,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.textContent;
-            
-            btn.disabled = true;
-            btn.textContent = 'Enviando...';
-            
-            // Simulación de envío
-            setTimeout(() => {
-                alert('¡Gracias! Su mensaje ha sido enviado con éxito. Nos pondremos en contacto pronto.');
-                contactForm.reset();
-                btn.disabled = false;
-                btn.textContent = originalText;
-            }, 1500);
+
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const servicio = document.getElementById('servicio-interes').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const emailTo = 'contacto@reliatechglobal.com';
+            const subject = `Consulta de ${nombre} - Servicio: ${servicio}`;
+            const body = `Nombre: ${nombre}\nEmail: ${email}\nServicio de Interés: ${servicio}\n\nMensaje:\n${mensaje}`;
+
+            window.location.href = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Show success message
+            alert('¡Gracias! Se abrirá tu cliente de email para completar el envío.');
+            contactForm.reset();
         });
     }
 
