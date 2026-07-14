@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #233d4d;
+    --primary-color: rgb(35, 61, 77);
     --secondary-color: rgb(254, 127, 45);
     --white: #ffffff;
     --bg-color: #fdfdfd;
@@ -502,7 +502,7 @@ header {
     -webkit-backdrop-filter: blur(10px);
     padding: 3.5rem 2.5rem;
     border-radius: 30px;
-    border: 1px solid rgba(128, 128, 128, 0.1);
+    border: 1px solid rgba(35, 61, 77, 0.25);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     display: flex;
@@ -983,14 +983,22 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+[data-theme="dark"] .stats-section {
+    background-color: #020617;
+}
+
+[data-theme="dark"] .section-title {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .service-card {
+    background: rgba(15, 23, 42, 0.9);
+}
+
 [data-theme="dark"] .service-card:hover {
-    background:  rgba(254, 127, 45, 0.4);
+    background: rgba(30, 41, 59, 0.95);
 }
 
-[data-theme="dark"] .service-card, .section-title, .stats-section{
-    background: rgba(255,255,255, 0.05);
-}
-
-[data-theme="dark"] .service-card::before{
+[data-theme="dark"] .service-card::before {
     background: none;
-} 
+}
