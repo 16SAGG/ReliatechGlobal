@@ -1,0 +1,22 @@
+{
+  "name": "ReliaTechGlobal - Ingeniería y Confiabilidad",
+  "short_name": "ReliaTech",
+  "description": "Líderes en ingeniería de confiabilidad y tecnología industrial.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#233d4d",
+  "theme_color": "#233d4d",
+  "icons": [
+    {
+      "src": "/assets/img/Reliatech_logo_rb.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/Reliatech_logo_rb.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
