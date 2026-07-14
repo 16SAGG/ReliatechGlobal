@@ -528,6 +528,24 @@ header {
     }
 }
 
+/* --- About section cards styling --- */
+#nosotros .service-card {
+    border-left: 6px solid var(--secondary-color);
+}
+
+#nosotros .service-card h3 {
+    font-size: 1.8rem;
+}
+
+#nosotros .service-card p {
+    font-size: 1.1rem;
+}
+
+.highlight-word {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
 .bg-light {
     background-color: var(--bg-section-light);
 }
