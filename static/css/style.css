@@ -1,6 +1,6 @@
 :root {
     --primary-color: #233d4d;
-    --secondary-color: #fe7f2d;
+    --secondary-color: rgb(254, 127, 45);
     --white: #ffffff;
     --bg-color: #fdfdfd;
     --bg-section-light: #f9fbfd;
@@ -273,11 +273,35 @@ header {
     margin-bottom: 2rem;
 }
 
+.buttons-hero{
+    display: flex; 
+    flex-direction: row; 
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .buttons-hero{
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+}
+
 .btn-primary {
     display: inline-block;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1.5rem;
     background-color: var(--secondary-color);
     color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -443,6 +467,10 @@ header {
     height: 4px;
     background-color: var(--secondary-color);
     border-radius: 2px;
+}
+
+.enhance {
+    color: var(--primary-color) !important;
 }
 
 /* --- Section Title Styling --- */
@@ -700,6 +728,15 @@ header {
     letter-spacing: 2px;
 }
 
+.simple-container {
+    background: var(--white);
+    /* Cambiado a variable */
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(254, 127, 45, 0.2);
+}
+
 /* Glassmorphism en Formulario (Refuerzo) */
 .contact-form-container {
     display: flex;
@@ -946,6 +983,14 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-[data-theme="dark"] .stats-section {
-    background-color: #020617;
+[data-theme="dark"] .service-card:hover {
+    background:  rgba(254, 127, 45, 0.4);
 }
+
+[data-theme="dark"] .service-card, .section-title, .stats-section{
+    background: rgba(255,255,255, 0.05);
+}
+
+[data-theme="dark"] .service-card::before{
+    background: none;
+} 
