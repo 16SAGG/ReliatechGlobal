@@ -49,11 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
             indicators[currentIndex].classList.add('active');
         };
 
-        const nextSlide = () => goToSlide(currentIndex + 1);
-        const prevSlide = () => goToSlide(currentIndex - 1);
+        const nextSlide = () => {
+            goToSlide(currentIndex + 1);
+            resetAutoplay();
+        };
+        const prevSlide = () =>{
+            goToSlide(currentIndex - 1);
+            resetAutoplay();
+        };
 
         const startAutoplay = () => {
-            autoplayTimer = setInterval(nextSlide, 10000);
+            autoplayTimer = setInterval(nextSlide, 5000);
         };
 
         const stopAutoplay = () => {
@@ -67,12 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         nextBtn.addEventListener('click', () => {
             nextSlide();
-            resetAutoplay();
         });
 
         prevBtn.addEventListener('click', () => {
             prevSlide();
-            resetAutoplay();
         });
 
         indicators.forEach((indicator, index) => {
