@@ -832,9 +832,8 @@ header {
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    gap: 2rem;
     text-align: left;
 }
 
@@ -875,6 +874,10 @@ header {
 
 .footer-col ul li {
     margin-bottom: 0.8rem;
+}
+
+.footer-col {
+    flex:1;
 }
 
 .footer-col ul a {
