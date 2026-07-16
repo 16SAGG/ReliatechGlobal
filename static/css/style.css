@@ -997,6 +997,10 @@ header {
     color: var(--secondary-color);
 }
 
+[data-theme="dark"] .carousel-img-text p{
+    color: --var(--text-color);
+}
+
 [data-theme="dark"] .nav-links a {
     color: var(--text-color);
 }
