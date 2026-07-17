@@ -40,35 +40,59 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = carousel.querySelector('.carousel-arrow-right');
         let currentIndex = 0;
         let autoplayTimer = null;
+        
+        // NUEVOS GUARDIAS
+        let isHovered = false; // Detecta si el mouse está encima
+        let isMoving = false;  // Evita el spam de clics rápidos
 
         const goToSlide = (index) => {
+            // Si el carrusel está cambiando de diapositiva, ignoramos nuevos clics por un instante
+            if (isMoving) return; 
+            isMoving = true;
+
             slides[currentIndex].classList.remove('active');
             indicators[currentIndex].classList.remove('active');
+            
             currentIndex = (index + slides.length) % slides.length;
+            
             slides[currentIndex].classList.add('active');
             indicators[currentIndex].classList.add('active');
+
+            // Desbloqueamos los clics tras un breve retraso (ej. 400ms). 
+            // Ajústalo al tiempo que dure tu animación CSS.
+            setTimeout(() => {
+                isMoving = false;
+            }, 400); 
+
+            resetAutoplay();
         };
 
         const nextSlide = () => {
             goToSlide(currentIndex + 1);
-            resetAutoplay();
         };
-        const prevSlide = () =>{
+        const prevSlide = () => {
             goToSlide(currentIndex - 1);
-            resetAutoplay();
         };
 
         const startAutoplay = () => {
+            // Doble seguridad: limpiamos cualquier timer previo antes de crear uno nuevo
+            stopAutoplay();
             autoplayTimer = setInterval(nextSlide, 5000);
         };
 
         const stopAutoplay = () => {
-            clearInterval(autoplayTimer);
+            if (autoplayTimer) {
+                clearInterval(autoplayTimer);
+                autoplayTimer = null;
+            }
         };
 
         const resetAutoplay = () => {
             stopAutoplay();
-            startAutoplay();
+            // SÓLO reactivamos el autoplay si el usuario NO tiene el mouse encima
+            if (!isHovered) {
+                startAutoplay();
+            }
         };
 
         nextBtn.addEventListener('click', () => {
@@ -82,12 +106,19 @@ document.addEventListener('DOMContentLoaded', () => {
         indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
                 goToSlide(index);
-                resetAutoplay();
             });
         });
 
-        carousel.addEventListener('mouseenter', stopAutoplay);
-        carousel.addEventListener('mouseleave', startAutoplay);
+        // Controlamos el estado del mouse de manera precisa
+        carousel.addEventListener('mouseenter', () => {
+            isHovered = true;
+            stopAutoplay();
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isHovered = false;
+            startAutoplay();
+        });
 
         startAutoplay();
     }
