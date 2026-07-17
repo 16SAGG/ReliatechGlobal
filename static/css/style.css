@@ -1019,6 +1019,44 @@ header {
     color: var(--secondary-color);
 }
 
+/* --- Estilos para el Selector de Idioma --- */
+.lang-toggle {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.lang-toggle i {
+    width: 16px;
+    height: 16px;
+}
+
+.lang-toggle:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+[data-theme="dark"] .lang-toggle {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .lang-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color, #111);
+}
+
 [data-theme="dark"] .carousel-img-text p{
     color: --var(--text-color);
 }

@@ -92,18 +92,22 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#mision">Misión</a></li>
-                <li><a href="#vision">Visión</a></li>
-                <li><a href="#servicio">Servicio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#nosotros" data-i18n="nav.nosotros">Nosotros</a></li>
+                <li><a href="#mision" data-i18n="nav.mision">Misión</a></li>
+                <li><a href="#vision" data-i18n="nav.vision">Visión</a></li>
+                <li><a href="#servicio" data-i18n="nav.servicio">Servicio</a></li>
+                <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro" title="Cambiar tema">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Switch language" title="Español / English">
+                    <i data-lucide="globe"></i>
+                    <span id="lang-toggle-text">EN</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro" data-i18n-aria="aria.theme" title="Cambiar tema" data-i18n-title="title.theme">
                     <i data-lucide="moon"></i>
                 </button>
-                <div class="menu-toggle" id="mobile-menu" role="button" aria-label="Abrir menú de navegación móvil" tabindex="0">
+                <div class="menu-toggle" id="mobile-menu" role="button" aria-label="Abrir menú de navegación móvil" data-i18n-aria="aria.menu" tabindex="0">
                     <i data-lucide="menu"></i>
                 </div>
             </div>
@@ -114,15 +118,15 @@
         <section id="inicio" class="hero reveal">
             <div class="container hero-container" style="padding-top: 0.25rem;">
                 <div class="hero-content">
-                    <h1>La Gerencia de la Incertidumbre en <span class="text-highlight">Gestión de Activos</span></h1>
-                    <p class="hero-subtitle"><strong>RELIATECH GLOBAL, C.A.</strong> transforma datos dispersos en decisiones estratégicas de alta precisión. Aplicamos <strong>ingeniería estocástica avanzada</strong> e instrumentos científicos de vanguardia para cuantificar lo invisible y maximizar la rentabilidad de su infraestructura.</p>
+                    <h1 data-i18n-html="hero.title">La Gerencia de la Incertidumbre en <span class="text-highlight">Gestión de Activos</span></h1>
+                    <p class="hero-subtitle" data-i18n-html="hero.subtitle"><strong>RELIATECH GLOBAL, C.A.</strong> transforma datos dispersos en decisiones estratégicas de alta precisión. Aplicamos <strong>ingeniería estocástica avanzada</strong> e instrumentos científicos de vanguardia para cuantificar lo invisible y maximizar la rentabilidad de su infraestructura.</p>
                     <div class="buttons-hero">
                         <div class="btn-magnetic-container">
-                            <a href="#contacto" class="btn-primary">Solicitar Consultoría Experta</a>
+                            <a href="#contacto" class="btn-primary" data-i18n="hero.btn_primary">Solicitar Consultoría Experta</a>
                         </div>
                         <div>
                             <a href="static/pdf/Reliatech Global - Folleto Corporativo.pdf" download class="btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                                <i data-lucide="download"></i> Folleto Corporativo
+                                <i data-lucide="download"></i> <span data-i18n="hero.btn_secondary">Folleto Corporativo</span>
                             </a>
                         </div>
                     </div>
@@ -133,68 +137,68 @@
                             <div class="carousel-slide active">
                                 <img decoding="async" src="static/img/1.webp" class="carousel-img" alt="ReliaTech Global - Ingeniería de Confiabilidad 1" width="600" height="400">
                                 <div class="carousel-img-text">
-                                    <p>Inspección basada en riesgo</p>
+                                    <p data-i18n="carousel.1">Inspección basada en riesgo</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/2.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 2" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Inspección externa de tanques de crudo y productos</p>
+                                    <p data-i18n="carousel.2">Inspección externa de tanques de crudo y productos</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/3.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 3" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Caracterización de espesores por placas y anillos de tanques</p>
+                                    <p data-i18n="carousel.3">Caracterización de espesores por placas y anillos de tanques</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/4.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 4" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Inspección de equipos rotativos</p>
+                                    <p data-i18n="carousel.4">Inspección de equipos rotativos</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/5.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 5" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Caracterización de TPPF y TPFS para el RAM</p>
+                                    <p data-i18n="carousel.5">Caracterización de TPPF y TPFS para el RAM</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/6.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 6" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Simulación RAM</p>
+                                    <p data-i18n="carousel.6">Simulación RAM</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/7.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 7" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Instalación de sensores de vibración motor-bomba</p>
+                                    <p data-i18n="carousel.7">Instalación de sensores de vibración motor-bomba</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/8.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 8" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Análisis de esfuerzos en impulsor</p>
+                                    <p data-i18n="carousel.8">Análisis de esfuerzos en impulsor</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/9.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 9" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Inspección en monoboya</p>
+                                    <p data-i18n="carousel.9">Inspección en monoboya</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
                                 <img decoding="async" class="carousel-img" src="static/img/10.webp" alt="ReliaTech Global - Ingeniería de Confiabilidad 10" width="600" height="400" loading="lazy">
                                 <div class="carousel-img-text">
-                                    <p>Inspección de junta de expansión</p>
+                                    <p data-i18n="carousel.10">Inspección de junta de expansión</p>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-arrow carousel-arrow-left" aria-label="Imagen anterior" type="button">
+                        <button class="carousel-arrow carousel-arrow-left" aria-label="Imagen anterior" data-i18n-aria="carousel.prev" type="button">
                             <i data-lucide="chevron-left"></i>
                         </button>
-                        <button class="carousel-arrow carousel-arrow-right" aria-label="Siguiente imagen" type="button">
+                        <button class="carousel-arrow carousel-arrow-right" aria-label="Siguiente imagen" data-i18n-aria="carousel.next" type="button">
                             <i data-lucide="chevron-right"></i>
                         </button>
                         <div class="carousel-indicators">
@@ -218,23 +222,23 @@
             <div class="container">
                 <div class="cards-full-width">
                     <div class="service-card">
-                        <h3>Quiénes <span class="highlight-word">Somos</span></h3>
-                        <p><strong>RELIATECH GLOBAL, C.A.</strong> es una empresa de Ingeniería de Confiabilidad y Gestión de Activos que acompaña a la industria en su tránsito de la operación reactiva hacia la excelencia operacional. Integramos ingeniería especializada, tecnología propia y un equipo multidisciplinario certificado en confiabilidad, mantenimiento, automatización, instrumentación e integridad mecánica.</p>
+                        <h3 data-i18n-html="nosotros.title">Quiénes <span class="highlight-word">Somos</span></h3>
+                        <p data-i18n-html="nosotros.body"><strong>RELIATECH GLOBAL, C.A.</strong> es una empresa de Ingeniería de Confiabilidad y Gestión de Activos que acompaña a la industria en su tránsito de la operación reactiva hacia la excelencia operacional. Integramos ingeniería especializada, tecnología propia y un equipo multidisciplinario certificado en confiabilidad, mantenimiento, automatización, instrumentación e integridad mecánica.</p>
                     </div>
                 </div>
                 <div class="cards-half-width">
                     <div class="service-card" id="mision">
-                        <h3>Nuestra <span class="highlight-word">Misión</span></h3>
-                        <p>Nuestra misión es maximizar el valor de los activos industriales de nuestros clientes mediante ingeniería de confiabilidad, mantenimiento especializado y soluciones tecnológicas, transformando datos de desempeño en decisiones que incrementan la rentabilidad, la seguridad y la sostenibilidad del negocio.</p>
+                        <h3 data-i18n-html="mision.title">Nuestra <span class="highlight-word">Misión</span></h3>
+                        <p data-i18n="mision.body">Nuestra misión es maximizar el valor de los activos industriales de nuestros clientes mediante ingeniería de confiabilidad, mantenimiento especializado y soluciones tecnológicas, transformando datos de desempeño en decisiones que incrementan la rentabilidad, la seguridad y la sostenibilidad del negocio.</p>
                     </div>
                     <div class="service-card" id="vision">
-                        <h3>Nuestra <span class="highlight-word">Visión</span></h3>
-                        <p>Ser la autoridad de referencia en América Latina en la transformación de operaciones reactivas en ecosistemas de Clase Mundial, reconocidos por el equilibrio óptimo entre costo, riesgo y desempeño.</p>
+                        <h3 data-i18n-html="vision.title">Nuestra <span class="highlight-word">Visión</span></h3>
+                        <p data-i18n="vision.body">Ser la autoridad de referencia en América Latina en la transformación de operaciones reactivas en ecosistemas de Clase Mundial, reconocidos por el equilibrio óptimo entre costo, riesgo y desempeño.</p>
                     </div>
                 </div>
                 <div class="cards-full-width">
                     <div class="service-card">
-                        <p>Al equilibrar <strong> el Costo, el Riesgo y el Rendimiento</strong>, ubicamos sus activos en el punto óptimo de menor costo total. Evitamos que el exceso de mantenimiento tradicional destruya el OPEX, y que la falta del mismo dispare riesgos. La confiabilidad industrial científica es su mayor ventaja competitiva.</p>
+                        <p data-i18n-html="cost.body">Al equilibrar <strong> el Costo, el Riesgo y el Rendimiento</strong>, ubicamos sus activos en el punto óptimo de menor costo total. Evitamos que el exceso de mantenimiento tradicional destruya el OPEX, y que la falta del mismo dispare riesgos. La confiabilidad industrial científica es su mayor ventaja competitiva.</p>
                     </div>
                 </div>
             </div>
@@ -242,30 +246,30 @@
 
         <section id="servicio" class="content-section reveal">
             <div class="container">
-                <h2 class="section-title">Portafolio de Confiabilidad Integral</h2>
+                <h2 class="section-title" data-i18n="servicio.section_title">Portafolio de Confiabilidad Integral</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="database"></i>
                         </div>
-                        <h3>Mapeo Fundacional e Integridad del Dato</h3>
-                        <p>Establecemos las bases del conocimiento técnico e identificación taxonómica de activos, estructurando la criticidad integral de activos y la planificación y programación sistemática del mantenimiento.</p>
+                        <h3 data-i18n="servicio.card1.title">Mapeo Fundacional e Integridad del Dato</h3>
+                        <p data-i18n="servicio.card1.body">Establecemos las bases del conocimiento técnico e identificación taxonómica de activos, estructurando la criticidad integral de activos y la planificación y programación sistemática del mantenimiento.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="shield-check"></i>
                         </div>
-                        <h3>Confiabilidad Avanzada y Proactiva</h3>
-                        <p>Eliminación sistemática de fallas y optimización de la disponibilidad mediante la aplicación técnica de metodologías <a href="https://es.wikipedia.org/wiki/Mantenimiento_centrado_en_la_confiabilidad" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">RCM</a> (Mantenimiento Centrado en Confiabilidad), RCA (Análisis de Causa Raíz), FMEA y TPM.</p>
+                        <h3 data-i18n="servicio.card2.title">Confiabilidad Avanzada y Proactiva</h3>
+                        <p data-i18n-html="servicio.card2.body">Eliminación sistemática de fallas y optimización de la disponibilidad mediante la aplicación técnica de metodologías <a href="https://es.wikipedia.org/wiki/Mantenimiento_centrado_en_la_confiabilidad" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">RCM</a> (Mantenimiento Centrado en Confiabilidad), RCA (Análisis de Causa Raíz), FMEA y TPM.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="trending-up"></i>
                         </div>
-                        <h3>Ingeniería RAM e Integración ISO 55000</h3>
-                        <p>Estudios RAM (Confiabilidad, Disponibilidad y Mantenibilidad) mediante modelado estocástico, análisis de Costo de Ciclo de Vida (<a href="https://www.iso.org/standard/55088.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">LCC</a>), Inspección Basada en Riesgo (RBI) e integración organizacional bajo estándares ISO 55000.</p>
+                        <h3 data-i18n="servicio.card3.title">Ingeniería RAM e Integración ISO 55000</h3>
+                        <p data-i18n-html="servicio.card3.body">Estudios RAM (Confiabilidad, Disponibilidad y Mantenibilidad) mediante modelado estocástico, análisis de Costo de Ciclo de Vida (<a href="https://www.iso.org/standard/55088.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">LCC</a>), Inspección Basada en Riesgo (RBI) e integración organizacional bajo estándares ISO 55000.</p>
                     </div>
                 </div>
             </div>
@@ -273,49 +277,49 @@
 
         <section id="sectores" class="content-section reveal">
             <div class="container">
-                <h2 class="section-title">¿Qué hacemos?</h2>
+                <h2 class="section-title" data-i18n="quehacemos.section_title">¿Qué hacemos?</h2>
                 <div class="services-grid services-grid--max3">
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="settings"></i>
                         </div>
-                        <h3>Ingeniería de Confiabilidad</h3>
-                        <p>Desarrollo de estudios especializados en confiabilidad, implementación de monitoreo, análisis predictivo y definición de estrategias de mantenimiento.</p>
+                        <h3 data-i18n="quehacemos.card1.title">Ingeniería de Confiabilidad</h3>
+                        <p data-i18n="quehacemos.card1.body">Desarrollo de estudios especializados en confiabilidad, implementación de monitoreo, análisis predictivo y definición de estrategias de mantenimiento.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="toolbox"></i>
                         </div>
-                        <h3>Ingeniería Multidisciplinaria</h3>
-                        <p>Ingeniería conceptual, básica y de detalle, que ofrecen soluciones integrales en todas las etapas de maduración de un proyecto.</p>
+                        <h3 data-i18n="quehacemos.card2.title">Ingeniería Multidisciplinaria</h3>
+                        <p data-i18n="quehacemos.card2.body">Ingeniería conceptual, básica y de detalle, que ofrecen soluciones integrales en todas las etapas de maduración de un proyecto.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="microchip"></i>
                         </div>
-                        <h3>Automatización de Procesos</h3>
-                        <p>Diseño e implementación de soluciones de automatización e instrumentación de procesos.</p>
+                        <h3 data-i18n="quehacemos.card3.title">Automatización de Procesos</h3>
+                        <p data-i18n="quehacemos.card3.body">Diseño e implementación de soluciones de automatización e instrumentación de procesos.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="cloudy"></i>
                         </div>
-                        <h3>Soluciones Tecnológicas</h3>
-                        <p>Desarrollo de Plataformas propias para la optimización de procesos, administración de datos de desempeño, implementación de gemelos digitales, KPI´s y herramientas para el procesamiento y análisis de data.</p>
+                        <h3 data-i18n="quehacemos.card4.title">Soluciones Tecnológicas</h3>
+                        <p data-i18n="quehacemos.card4.body">Desarrollo de Plataformas propias para la optimización de procesos, administración de datos de desempeño, implementación de gemelos digitales, KPI´s y herramientas para el procesamiento y análisis de data.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="wrench"></i>
                         </div>
-                        <h3>Mantenimiento Especializado</h3>
-                        <p>Inspección, reparación y mantenimiento de equipos estáticos, dinámicos, eléctricos e instrumentación en campo.</p>
+                        <h3 data-i18n="quehacemos.card5.title">Mantenimiento Especializado</h3>
+                        <p data-i18n="quehacemos.card5.body">Inspección, reparación y mantenimiento de equipos estáticos, dinámicos, eléctricos e instrumentación en campo.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="forklift"></i>
                         </div>
-                        <h3>Procuras y Suministros</h3>
-                        <p>Adquisición y abastecimiento de equipos, repuestos y materiales críticos para la operación.</p>
+                        <h3 data-i18n="quehacemos.card6.title">Procuras y Suministros</h3>
+                        <p data-i18n="quehacemos.card6.body">Adquisición y abastecimiento de equipos, repuestos y materiales críticos para la operación.</p>
                     </div>
                 </div>
             </div>
@@ -323,29 +327,29 @@
 
         <section id="sectores" class="content-section reveal">
             <div class="container">
-                <h2 class="section-title">Sectores Industriales que Potenciamos</h2>
-                <p class="section-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">Nuestras soluciones de ingeniería y optimización se adaptan a las exigencias críticas de operaciones de alta complejidad.</p>
+                <h2 class="section-title" data-i18n="sectores.section_title">Sectores Industriales que Potenciamos</h2>
+                <p class="section-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;" data-i18n="sectores.section_subtitle">Nuestras soluciones de ingeniería y optimización se adaptan a las exigencias críticas de operaciones de alta complejidad.</p>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="droplet"></i>
                         </div>
-                        <h3>Petróleo y Gas</h3>
-                        <p>Reduce paradas no programadas en operaciones de extracción, refinación y transporte, donde el riesgo de fallas catastróficas y el impacto ambiental son especialmente altos.</p>
+                        <h3 data-i18n="sectores.card1.title">Petróleo y Gas</h3>
+                        <p data-i18n="sectores.card1.body">Reduce paradas no programadas en operaciones de extracción, refinación y transporte, donde el riesgo de fallas catastróficas y el impacto ambiental son especialmente altos.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="zap"></i>
                         </div>
-                        <h3>Generación y Energía</h3>
-                        <p>En plantas de generación, Reliatech Global implementa RCM y TPM para extender el MTBF de turbinas, generadores and equipos auxiliares, reduciendo el MTTR cuando ocurre una intervención.</p>
+                        <h3 data-i18n="sectores.card2.title">Generación y Energía</h3>
+                        <p data-i18n="sectores.card2.body">En plantas de generación, Reliatech Global implementa RCM y TPM para extender el MTBF de turbinas, generadores and equipos auxiliares, reduciendo el MTTR cuando ocurre una intervención.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <i data-lucide="factory"></i>
                         </div>
-                        <h3>Industria y Procesos</h3>
-                        <p>Reliatech Global aplica su Pirámide GIA para estabilizar líneas de producción, reducir cuellos de botella y aumentar la capacidad de planta. El Análisis Causa Raíz (RCA) y la gestión con EAM permiten romper el ciclo reactivo de recortes-paradas-fallas.</p>
+                        <h3 data-i18n="sectores.card3.title">Industria y Procesos</h3>
+                        <p data-i18n="sectores.card3.body">Reliatech Global aplica su Pirámide GIA para estabilizar líneas de producción, reducir cuellos de botella y aumentar la capacidad de planta. El Análisis Causa Raíz (RCA) y la gestión con EAM permiten romper el ciclo reactivo de recortes-paradas-fallas.</p>
                     </div>
                 </div>
             </div>
@@ -356,19 +360,19 @@
                 <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
-                        <p class="stat-label">Activos en Taxonomía</p>
+                        <p class="stat-label" data-i18n="stats.label1">Activos en Taxonomía</p>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number" data-target="99">0</span><span class="stat-decimal">.9</span><span class="stat-suffix">%</span>
-                        <p class="stat-label">Disponibilidad RAM</p>
+                        <p class="stat-label" data-i18n="stats.label2">Disponibilidad RAM</p>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-                        <p class="stat-label">Defensa Estocástica</p>
+                        <p class="stat-label" data-i18n="stats.label3">Defensa Estocástica</p>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="1">0</span><span class="stat-suffix">er</span>
-                        <p class="stat-label">Cuartil de Desempeño</p>
+                        <span class="stat-number" data-target="1">0</span><span class="stat-suffix" data-i18n="stats.suffix4">er</span>
+                        <p class="stat-label" data-i18n="stats.label4">Cuartil de Desempeño</p>
                     </div>
                 </div>
             </div>
@@ -377,59 +381,59 @@
         <section id="contacto" class="content-section reveal">
             <div class="container">
                 <div style="display: flex; flex-direction: column;">
-                    <h2 class="enhance">¡Potencie su Confiabilidad Industrial!</h2>
-                    <p>Contacte a nuestros expertos para elevar sus estándares de gestión de activos. Respuesta garantizada en menos de 24 horas.</p>
+                    <h2 class="enhance" data-i18n="contacto.title">¡Potencie su Confiabilidad Industrial!</h2>
+                    <p data-i18n="contacto.subtitle">Contacte a nuestros expertos para elevar sus estándares de gestión de activos. Respuesta garantizada en menos de 24 horas.</p>
                     <div class="flex-container">
                         <div class="section-text text-left">
                             <ul class="contact-info-list" style="list-style: none; padding: 0; margin-top: 2rem;">
-                                <li style="margin-bottom: 1.5rem;"><i data-lucide="user" style="vertical-align: middle; margin-right: 0.5rem;"></i> <b>Contacto:</b> Ing. Henry Castillo</li>
+                                <li style="margin-bottom: 1.5rem;"><i data-lucide="user" style="vertical-align: middle; margin-right: 0.5rem;"></i> <b data-i18n="contacto.label_contact">Contacto:</b> Ing. Henry Castillo</li>
                                 <li style="margin-bottom: 1.5rem;"><i data-lucide="mail" style="vertical-align: middle; margin-right: 0.5rem;"></i> <a href="mailto:contacto@reliatechglobal.com" style="color: inherit; text-decoration: none;">contacto@reliatechglobal.com</a></li>
                                 <li style="margin-bottom: 1.5rem;"><i data-lucide="mail" style="vertical-align: middle; margin-right: 0.5rem;"></i> <a href="mailto:castillohja@reliatechglobal.com" style="color: inherit; text-decoration: none;">castillohja@reliatechglobal.com</a></li>
                                 <li style="margin-bottom: 1.5rem;"><i data-lucide="phone" style="vertical-align: middle; margin-right: 0.5rem;"></i> 0414 1848078 / 0412 6812277</li>
                                 <li style="margin-bottom: 1.5rem;"><i data-lucide="file-text" style="vertical-align: middle; margin-right: 0.5rem;"></i> RIF: J-508134605</li>
-                                <li style="margin-bottom: 1.5rem;"><i data-lucide="map-pin" style="vertical-align: middle; margin-right: 0.5rem;"></i> Barcelona, Edo. Anzoátegui, Venezuela</li>
-                                <li style="margin-bottom: 1.5rem; font-size: 0.9rem; opacity: 0.8; padding-left: 1.8rem; line-height: 1.4;">Zona Industrial Los Montones, II Etapa.</li>
+                                <li style="margin-bottom: 1.5rem;"><i data-lucide="map-pin" style="vertical-align: middle; margin-right: 0.5rem;"></i> <span data-i18n="contacto.address">Barcelona, Edo. Anzoátegui, Venezuela</span></li>
+                                <li style="margin-bottom: 1.5rem; font-size: 0.9rem; opacity: 0.8; padding-left: 1.8rem; line-height: 1.4;" data-i18n="contacto.address2">Zona Industrial Los Montones, II Etapa.</li>
                             </ul>
-                            
+
                             <div style="margin-top: 2.5rem;">
                                 <a href="static/pdf/Reliatech Global - Folleto Corporativo.pdf" download class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                                    <i data-lucide="download"></i> Descargar Folleto Corporativo
+                                    <i data-lucide="download"></i> <span data-i18n="contacto.download_brochure">Descargar Folleto Corporativo</span>
                                 </a>
                             </div>
 
                             <div class="share-container" style="margin-top: 2.5rem;">
-                                <p style="font-weight: 600; margin-bottom: 1rem;">Comparta nuestra propuesta:</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;" data-i18n="contacto.share_text">Comparta nuestra propuesta:</p>
                                 <div class="share-buttons" style="display: flex; gap: 1rem;">
-                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://reliatechglobal.com/" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en LinkedIn" style="color: var(--primary-color);"><i data-lucide="linkedin"></i></a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://reliatechglobal.com/&text=Ingeniería de Confiabilidad y Tecnología Industrial con ReliaTech Global" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en Twitter" style="color: var(--primary-color);"><i data-lucide="twitter"></i></a>
-                                    <a href="https://api.whatsapp.com/send?text=Conozca ReliaTech Global: Ingeniería de Confiabilidad y Tecnología Industrial https://reliatechglobal.com/" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en WhatsApp" style="color: var(--primary-color);"><i data-lucide="message-circle"></i></a>
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://reliatechglobal.com/" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en LinkedIn" data-i18n-aria="contacto.share_linkedin" style="color: var(--primary-color);"><i data-lucide="linkedin"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?url=https://reliatechglobal.com/&text=Ingeniería de Confiabilidad y Tecnología Industrial con ReliaTech Global" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en Twitter" data-i18n-aria="contacto.share_twitter" style="color: var(--primary-color);"><i data-lucide="twitter"></i></a>
+                                    <a href="https://api.whatsapp.com/send?text=Conozca ReliaTech Global: Ingeniería de Confiabilidad y Tecnología Industrial https://reliatechglobal.com/" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Compartir en WhatsApp" data-i18n-aria="contacto.share_whatsapp" style="color: var(--primary-color);"><i data-lucide="message-circle"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="contact-form-container">
                             <form id="contact-form" class="modern-form">
                                 <div class="form-group">
-                                    <label for="nombre" class="sr-only">Nombre completo</label>
-                                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                                    <label for="nombre" class="sr-only" data-i18n="form.name">Nombre completo</label>
+                                    <input type="text" id="nombre" placeholder="Nombre completo" data-i18n-placeholder="form.name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email" class="sr-only">Email corporativo</label>
-                                    <input type="email" id="email" placeholder="Email corporativo" required>
+                                    <label for="email" class="sr-only" data-i18n="form.email">Email corporativo</label>
+                                    <input type="email" id="email" placeholder="Email corporativo" data-i18n-placeholder="form.email" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="servicio-interes" class="sr-only">Servicio de interés</label>
+                                    <label for="servicio-interes" class="sr-only" data-i18n="form.service">Servicio de interés</label>
                                     <select id="servicio-interes" required>
-                                        <option value="" disabled selected>Servicio de interés</option>
-                                        <option value="confiabilidad">Ingeniería de Confiabilidad</option>
-                                        <option value="taxonomia">Taxonomía de Datos</option>
-                                        <option value="digital">Transformación Digital</option>
+                                        <option value="" disabled selected data-i18n="form.service">Servicio de interés</option>
+                                        <option value="confiabilidad" data-i18n="form.option_confiabilidad">Ingeniería de Confiabilidad</option>
+                                        <option value="taxonomia" data-i18n="form.option_taxonomia">Taxonomía de Datos</option>
+                                        <option value="digital" data-i18n="form.option_digital">Transformación Digital</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="mensaje" class="sr-only">Mensaje</label>
-                                    <textarea id="mensaje" rows="4" placeholder="Cuéntenos sobre su proyecto..." required></textarea>
+                                    <label for="mensaje" class="sr-only" data-i18n="form.message">Mensaje</label>
+                                    <textarea id="mensaje" rows="4" placeholder="Cuéntenos sobre su proyecto..." data-i18n-placeholder="form.message_placeholder" required></textarea>
                                 </div>
-                                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Mensaje</button>
+                                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;" data-i18n="form.submit">Enviar Mensaje</button>
                             </form>
                         </div>
                     </div>
@@ -444,27 +448,27 @@
                 <div class="footer-col brand-col">
                     <img decoding="async" src="static/img/Reliatech_logo_rb.webp" alt="RELIATECH GLOBAL, C.A. - Confiabilidad Industrial" class="footer-logo" width="200" height="144">
                     <p>RELIATECH GLOBAL, C.A. | RIF: J-508134605</p>
-                    <p>Expertos en ingeniería estocástica de confiabilidad y gestión de activos industriales.</p>
+                    <p data-i18n="footer.tagline">Expertos en ingeniería estocástica de confiabilidad y gestión de activos industriales.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navegación</h4>
+                    <h4 data-i18n="footer.nav_title">Navegación</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#servicio">Servicios</a></li>
+                        <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                        <li><a href="#nosotros" data-i18n="nav.nosotros">Nosotros</a></li>
+                        <li><a href="#servicio" data-i18n="footer.services">Servicios</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="footer.legal_title">Legal</h4>
                     <ul>
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">Términos</a></li>
-                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacidad</a></li>
+                        <li><a href="#" data-i18n="footer.terms">Términos</a></li>
+                        <li><a href="#" data-i18n="footer.cookies">Cookies</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 RELIATECH GLOBAL, C.A. Todos los derechos reservados.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 RELIATECH GLOBAL, C.A. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
